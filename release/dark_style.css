@@ -1,0 +1,399 @@
+/* *{font-family: 'Consolas';font-size:12pt;} */
+*{font-family: 'Consolas';font-size:8pt;}
+
+#MainWindow {
+    color: rgb(255, 255, 255);
+}
+
+#logoLabel {
+    min-width:294px;
+    max-width:294px;
+    min-height:70px;
+    max-height:70px;
+    background:url(resource/light-wide-2.png) no-repeat;
+    margin-left:14px;
+    margin-right:14px;
+}
+
+#frameSensors QToolButton, QPushButton { 
+    border:none;
+    color:rgb(0, 156, 255);
+    background:rgb(47, 50, 59);
+    height:70px;
+    border-left:1px solid rgb(64, 68, 79);
+    border-right:1px solid rgb(26, 27, 29);
+}
+#frameSensors QToolButton:!enabled, QPushButton:!enabled{color:rgb(155, 155, 155);}
+
+
+#checkBoxSwitch::indicator:unchecked {
+   image: url(resource/switchOff.svg);
+}
+#checkBoxSwitch::indicator:checked {
+    image: url(resource/switchOn.svg);
+}
+
+#connectBtn {
+    background:rgb(0, 156, 255);
+    border-radius:25px;
+    image: url(resource/icon_usb2_white.svg);
+}
+
+#connectBtn:pressed {
+    background:rgb(65, 108, 139);
+}
+
+
+#connectLabel {
+    color:rgb(227, 234, 242);
+    font-size:12px;
+}
+
+
+#Navigation QFrame {
+    outline: none;
+    border: none;
+    background: rgb(37, 40, 47);
+}
+
+#Navigation QScrollArea {
+    background: rgb(46, 46, 46);
+    outline: none;
+    border: none;
+    border-top:1px solid rgb(71, 75, 84);
+    border-right:1px solid rgb(71, 75, 84);
+}
+
+#navigationList {
+    background: rgb(37, 40, 47);
+    border: 0px;
+    outline: none;
+}
+#navigationList::item {
+    height:40px;
+    border:none;
+    outline: none;
+    color: rgb(227, 234, 242);
+    text-align: center;
+    padding-left:14px;
+    background:rgb(37, 40, 47);
+    border-bottom:1px solid rgba(0,0,0,0.3);
+}
+#navigationList::item:hover {
+    background:rgba(28, 90, 130, 0.8);
+}
+#navigationList::item:selected {
+    background: rgb(0, 156, 255);
+}
+
+
+#blackFrame {
+    background:rgb(35, 38, 45);
+}
+
+#statusbar {
+    background:rgb(24, 28, 31);
+    border-top:1px solid rgb(125, 125, 121);
+    padding:0 10px;
+}
+#statusbar::item {
+    border: none;
+    border-right: 1px solid rgb(125, 125, 125);
+}
+#statusbar QLabel {
+    padding-left:10px;
+    padding-right:10px;
+    color:rgb(170, 170, 170);
+}
+
+QComboBox{
+    background:rgb(47, 50, 59);
+    border:1px solid rgb(204, 204, 204);
+    border-color: rgb(17, 17, 17) rgb(10, 10, 10) black;
+    color:rgb(166, 166, 166);
+}
+QComboBox::drop-down{
+    width: 0;
+    height: 0;
+    border-top:4px solid rgb(136, 136, 136);
+    border-right:4px solid rgba(0,0,0,0.01);
+    border-bottom:4px solid rgba(0,0,0,0.01);
+    border-left:4px solid rgba(0,0,0,0.01);
+    margin-top:6px;
+    margin-right:4px;
+    margin-left:30px;
+}
+QComboBox QAbstractItemView {
+    border: 1px solid rgb(0, 156, 255);
+    /* background: rgb(47, 50, 59); */
+    background: rgb(0, 156, 255);
+    outline: none;
+}
+
+QLabel { 
+    color:rgb(227, 234, 242);
+}
+
+QCheckBox{
+    spacing:5px;
+    color:rgb(113, 122, 141);
+}
+QCheckBox::indicator {
+    width:40px;
+    height:20px;
+}
+QCheckBox::indicator:unchecked {
+   image: url(resource/checkBox.svg);
+}
+QCheckBox::indicator:checked {
+    image: url(resource/checkBoxChecked.svg);
+}
+
+
+
+
+#blackPushButton {
+        border-radius: 4px;
+        border: none;
+        width: 75px;
+        height: 20px;
+}
+#blackPushButton:enabled {
+        background: rgb(57, 58, 60);
+        color: rgb(175, 175, 175);
+}
+#blackPushButton:!enabled {
+        background: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
+}
+#blackPushButton:enabled:hover{
+        background: rgb(85, 85, 85);
+}
+#blackPushButton:enabled:pressed{
+        background: rgb(0, 156, 255);
+}
+#blackPushButton:enabled:checked{
+        background: rgb(0, 156, 255);
+}
+
+QPushButton {
+    background:transparent;
+    border:1px solid rgb(0, 156, 255);
+    color:#4fa6e6;
+
+}
+QPushButton:hover{background:rgb(0, 156, 255);color:#ffffff;}
+QPushButton:checked{background:rgb(0, 156, 255);color:#ffffff;}
+
+QTabWidget::pane {
+        border: none;
+        background: rgb(32, 33, 38);
+}
+
+QTabWidget::tab-bar {
+        border: 0px;
+}
+QTabBar::tab {
+        border: none;
+        height:     0px;
+        min-width:  0px;
+}
+
+QTabBar::tab:hover {
+        background: rgb(57, 58, 60);
+}
+QTabBar::tab:selected {
+        color: white;
+        background: rgb(24, 22, 22);
+}
+
+QLineEdit {
+    background: rgb(57, 58, 60);
+    /* border:1px; */
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+QScrollBar:horizontal {
+        height: 20px;
+        background: transparent;
+        margin-top: 3px;
+        margin-bottom: 3px;
+}
+QScrollBar::handle:horizontal {
+        height: 20px;
+        min-width: 30px;
+        background: rgb(68, 69, 73);
+        margin-left: 15px;
+        margin-right: 15px;
+}
+QScrollBar::handle:horizontal:hover {
+        background: rgb(80, 80, 80);
+}
+QScrollBar::sub-line:horizontal {
+        width: 15px;
+        background: transparent;
+        subcontrol-position: left;
+}
+QScrollBar::add-line:horizontal {
+        width: 15px;
+        background: transparent;
+        subcontrol-position: right;
+}
+QScrollBar::sub-line:horizontal:hover {
+        background: rgb(68, 69, 73);
+}
+QScrollBar::add-line:horizontal:hover {
+        background: rgb(68, 69, 73);
+}
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal {
+        background: transparent;
+}
+
+QScrollBar:vertical {
+        width: 15px;
+        background: transparent;
+        margin-left: 3px;
+        margin-right: 3px;
+}
+QScrollBar::handle:vertical {
+        width: 20px;
+        min-height: 30px;
+        background: rgb(68, 69, 73);
+        margin-top: 15px;
+        margin-bottom: 15px;
+}
+QScrollBar::handle:vertical:hover {
+        background: rgb(80, 80, 80);
+}
+QScrollBar::sub-line:vertical {
+        height: 15px;
+        background: transparent;
+        subcontrol-position: top;
+}
+QScrollBar::add-line:vertical {
+        height: 15px;
+        background: transparent;
+        subcontrol-position: bottom;
+}
+QScrollBar::sub-line:vertical:hover {
+        background: rgb(68, 69, 73);
+}
+QScrollBar::add-line:vertical:hover {
+        background: rgb(68, 69, 73);
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+        background: transparent;
+}
+
+
+
+QSpinBox,QDoubleSpinBox{
+    border:1px solid rgb(71, 73, 70);
+    background:transparent;
+    height:22px;
+    color:rgb(175, 175, 175);
+    min-width:44px;
+}
+QSpinBox::up-button,QSpinBox::down-button,QDoubleSpinBox::up-button,QDoubleSpinBox::down-button{
+    background:rgb(20, 21, 25);
+}
+QSpinBox::up-arrow,QDoubleSpinBox::up-arrow{
+    /* width:10px;height:10px; */
+    /* image:url(resource/up_arrow.png); */
+}
+QSpinBox::down-arrow,QDoubleSpinBox::down-arrow{
+    /* width:10px;height:10px; */
+    /* image:url(resource/down_arrow.png); */
+}
+QSpinBox::up-button:hover,QSpinBox::down-button:hover,QDoubleSpinBox::up-button:hover,QDoubleSpinBox::down-button:hover{
+    background: rgba(255, 255, 255, 30);
+}
+
+
+QTreeWidget::item{border:none;padding:2px;color:rgb(227, 234, 242);}
+QTreeWidget::item:hover{background:rgb(51, 54, 63);}
+QTreeWidget::item:selected{background:rgb(92, 100, 116);}
+QTreeWidget::item:selected:active{color:rgb(255, 255, 255);outline:0px;}
+QTreeWidget::item:selected:!active{color:rgb(255, 255, 255);}
+
+
+QProgressBar::chunk{background:rgb(0, 156, 255);}
+
+QWidget#widget_sensors QGroupBox{
+    background:rgb(37, 40, 47);
+    border:1px solid rgb(98, 98, 98);
+}
+
+#blackWgt_noBorder  {
+    background: rgb(32, 33, 38);
+    border:none;
+}
+
+#tabSensorFrame {
+    min-width:180px;
+    max-width:180px;
+    border-top:     0px solid rgb(98, 98, 98);
+    border-right:   0px solid rgb(98, 98, 98);
+    border-bottom:  0px solid rgb(36, 25, 25);
+    border-left:    1px solid rgb(98, 98, 98);
+}
+
+#tabSensorFrame QLabel {
+    color:rgb(113, 122, 141);
+}
+
+#notifyLabel {
+    color: rgb(227, 234, 242);
+    font-size: 11pt;
+}
+
+QWidget#widget_sensors QLineEdit{
+    height:20px;
+    border:none;
+    border-radius:3px;
+    background:rgb(0, 171, 238);
+    color: black;
+}
+
+
+#blackWgt_1pxBorder {
+    background:rgb(37, 40, 47);
+    border:1px solid rgb(98, 98, 98);
+}
+
+#summaryScl {
+    background:rgb(37, 40, 47);
+    border: none;
+}
+
+#nameLabel, #uintLabel {
+    font-size:11pt;
+    color:rgb(113, 122, 141);
+    /* color: rgb(10, 10, 10); */
+}
+#valueLabel {
+    font-size:11pt;
+    color: cornflowerblue;
+}
+
+#headerLabel {
+    background:rgb(46, 49, 56);
+    /* color:#c5cee1; */
+    color: paleturquoise;
+}
+
+#ConsoleWgt {
+    background:transparent;
+    border:none;
+    color: rgb(113, 122, 141);
+    font-size:11pt;
+}
+
+#paramLineEdit {
+    background: rgb(37, 40, 47);
+    border: 1px solid rgb(98, 98, 98);
+    color:rgb(113, 122, 141);
+}
+
+
